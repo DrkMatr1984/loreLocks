@@ -17,10 +17,10 @@ public class Settings {
 
 	// Config values
 	public static int KeyID = 369;
-	public static int KeyDV = 1;
+	public static int KeyDV = 0;
 	public static String KeyName = "Key";
 	public static int LockPickID = 369;
-	public static int LockPickDV = 1;
+	public static int LockPickDV = 0;
 	public static String LockPickName = "Lock Pick";
 	public static double LockPickBreakChance = 0.3d;
 	public static double LockPickBreakChanceRate = 0.01d;
