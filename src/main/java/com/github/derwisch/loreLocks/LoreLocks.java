@@ -223,10 +223,10 @@ public class LoreLocks extends JavaPlugin {
 		for (int i = 0; i < inventory.getSize(); i++) {
 			ItemStack stack = inventory.getItem(i);
 			ItemMeta stackMeta = (stack != null) ? stack.getItemMeta() : null;
-			//String stackName = (stackMeta != null) ? ((stackMeta.getDisplayName() != null) ? stackMeta.getDisplayName() : "") : "";
-			//String requiredStackName = ChatColor.WHITE + Settings.KeyName + ChatColor.RESET;
+			String stackName = (stackMeta != null) ? ((stackMeta.getDisplayName() != null) ? stackMeta.getDisplayName() : "") : "";
+			String requiredStackName = ChatColor.WHITE + Settings.KeyName + ChatColor.RESET;
 
-			if (stack != null && /* stackName.equals(requiredStackName) && */stack.getTypeId() == Settings.KeyID && stack.getDurability() == Settings.KeyDV) {
+			if (stack != null && stackName.equals(requiredStackName) && stack.getTypeId() == Settings.KeyID && stack.getDurability() == Settings.KeyDV) {
 				List<String> keyLore = stackMeta.getLore();
 				List<String> lockLore = lock.getItemMeta().getLore();
 				
